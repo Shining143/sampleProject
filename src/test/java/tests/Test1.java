@@ -19,7 +19,9 @@ public class Test1 {
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
 		RemoteWebDriver driver = new ChromeDriver(co);
+		driver.manage().window().maximize();
 		driver.get("https://mvnrepository.com/");
+		
 	
 	}
 
